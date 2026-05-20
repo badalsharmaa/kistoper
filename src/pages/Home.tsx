@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { ArrowRight, Truck, ShieldCheck, Clock, Search, ChevronRight, Sparkles, Timer, Gift, MessageCircle, CalendarSync, MapPin } from 'lucide-react';
+import ProductCard from '../components/ui/ProductCard';
+import PromoPopup from '../components/ui/PromoPopup';
+import ProductMarquee from '../components/ui/ProductMarquee';
+import RewardsMarquee from '../components/ui/RewardsMarquee';
+import { MOCK_PRODUCTS } from '../lib/data';
 import { motion } from 'motion/react';
 import { cn } from '../lib/utils';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
