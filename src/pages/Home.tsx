@@ -134,7 +134,7 @@ export default function Home() {
                 initial={{ scale: 1.2 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
-                src="src/assets/lampwithbg2.png" 
+                src="/branding/lampwithbg2.png" 
                 alt="Handcrafted Glass Lamps" 
                 className="w-full h-full object-cover"
               />
@@ -300,7 +300,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 h-auto md:h-[500px]">
           {/* Promo 1 - Large */}
           <Link to="/shop?category=Glass%20Lamps" className="md:col-span-8 relative rounded-[2rem] overflow-hidden group h-[400px] md:h-full">
-            <img src="src/assets/lampwithbg.png" alt="Handcrafted Lamps" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+            <img src="/branding/lampwithbg.png" alt="Handcrafted Lamps" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-950/90 via-brand-900/40 to-transparent" />
             <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
               <span className="text-brand-300 font-bold tracking-widest text-[10px] mb-3 uppercase">Artisan Crafted</span>
@@ -313,7 +313,7 @@ export default function Home() {
           
           {/* Promo 2 - Small */}
           <Link to="/shop?category=Designer%20Shoes" className="md:col-span-4 relative rounded-[2rem] overflow-hidden group h-[300px] md:h-full">
-            <img src="src/assets/shoes.png" alt="Designer Footwear" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+            <img src="/branding/shoes.png" alt="Designer Footwear" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
             <div className="absolute inset-0 bg-gradient-to-t from-accent-950/90 via-accent-900/40 to-transparent" />
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
               <span className="text-accent-300 font-bold tracking-widest text-[10px] mb-3 uppercase">Premium Quality</span>
@@ -422,7 +422,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-50 rounded-full blur-3xl -mr-20 -mt-20 transition-transform duration-700 group-hover:scale-150"></div>
             <div className="relative z-10">
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#25D366]/20 overflow-hidden">
-                <img src="/src/assets/whatsapp-icon.svg" alt="WhatsApp" className="w-full h-full object-cover" />
+                <img src="/branding/whatsapp-icon.svg" alt="WhatsApp" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl md:text-3xl font-display font-black text-gray-900 mb-4 tracking-tight">Direct WhatsApp Inquiry</h3>
               <p className="text-gray-600 mb-8 max-w-sm leading-relaxed font-medium">
