@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Search, ShoppingBag, Heart, User } from 'lucide-react';
+import { Home, Search, ShoppingBag, Briefcase, User } from 'lucide-react';
 import { useCart } from '../../lib/cart-context';
 import { cn } from '../../lib/utils';
 
@@ -50,14 +50,14 @@ export default function MobileBottomNav() {
         </button>
         
         <Link 
-          to="/quick-order" 
+          to="/services" 
           className={cn(
             "flex flex-col items-center justify-center w-full h-full space-y-1 transition-colors",
-            isActive('/quick-order') ? "text-brand-600" : "text-gray-400 hover:text-brand-600"
+            isActive('/services') ? "text-brand-600" : "text-gray-400 hover:text-brand-600"
           )}
         >
-          <Heart className="w-6 h-6" strokeWidth={isActive('/quick-order') ? 2.5 : 2} />
-          <span className="text-[10px] font-bold tracking-wide">Reorder</span>
+          <Briefcase className="w-6 h-6" strokeWidth={isActive('/services') ? 2.5 : 2} />
+          <span className="text-[10px] font-bold tracking-wide">Services</span>
         </Link>
         
         <Link 
