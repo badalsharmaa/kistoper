@@ -4,7 +4,8 @@ import re
 
 mapping_files = [
     "public/labeled_assets/Table_Lamp  SHIVANSH INTERNATIONAL.pdf_mapping.json",
-    "public/labeled_assets/SHOES_PIC KISTOPER  (29)[1].pdf_mapping.json"
+    "public/labeled_assets/SHOES_PIC KISTOPER  (29)[1].pdf_mapping.json",
+    "public/labeled_assets/manual_mapping.json"
 ]
 
 # Try to parse dimensions from Table_Lamp text
@@ -32,12 +33,15 @@ for mapping_file in mapping_files:
                 continue
             seen_skus.add(sku)
             
-            category = "Glass Lamps" if "Lamp" in mapping_file else "Designer Shoes"
+            category = item.get("category", "Glass Lamps" if "Lamp" in mapping_file else "Designer Shoes")
             
-            # Default values
-            price = 29.99 if category == "Glass Lamps" else 45.00
-            unit = lamp_info.get(sku, "Piece" if category == "Glass Lamps" else "Pair")
-            name = f"{'Mosaic Table Lamp' if category == 'Glass Lamps' else 'Designer Footwear'} - {sku}"
+            # Default values or overrides
+            price = item.get("price", 29.99 if category == "Glass Lamps" else 45.00)
+            unit = item.get("unit", lamp_info.get(sku, "Piece" if category == "Glass Lamps" else "Pair"))
+            name = item.get("name", f"{'Mosaic Table Lamp' if category == 'Glass Lamps' else 'Designer Footwear'} - {sku}")
+            
+            # Image path handling (automated mapping uses 'image', manual uses 'raw_image')
+            image_name = item.get("image", item.get("raw_image"))
             
             # Add some discounts to populate Flash Sale
             discount = None
@@ -50,7 +54,7 @@ for mapping_file in mapping_files:
                 "id": sku,
                 "name": name,
                 "price": price,
-                "image": f"/labeled_assets/{item['image']}",
+                "image": f"/labeled_assets/{image_name}",
                 "category": category,
                 "unit": unit,
                 "inStock": True

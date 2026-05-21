@@ -79,7 +79,7 @@ export default function ProductMarquee() {
               duration: 4, 
               ease: "easeInOut" 
             }}
-            src="/branding/hang_lamp.png" 
+            src="/branding/hang_lamp.webp" 
             alt="Handcrafted Lamp"
             className="w-full h-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-500 rounded-3xl"
             style={{

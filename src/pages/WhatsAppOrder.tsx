@@ -12,10 +12,10 @@ export default function WhatsAppOrder() {
             <MessageCircle className="w-4 h-4" /> Official WhatsApp Ordering
           </div>
           <h1 className="text-4xl md:text-6xl font-display font-black mb-6 leading-tight">
-            Order Groceries with a Text.
+            Direct Export Inquiry via WhatsApp.
           </h1>
           <p className="text-green-50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Skip the cart. Just send us your shopping list on WhatsApp, and we'll have it ready for pickup or delivery in minutes.
+            Skip the portal. Send your bulk requirements on WhatsApp for immediate export quotes and logistics planning.
           </p>
         </div>
       </div>
@@ -32,15 +32,15 @@ export default function WhatsAppOrder() {
                 <div className="w-10 h-10 rounded-full bg-green-100 text-[#128C7E] flex items-center justify-center flex-shrink-0 font-black text-lg">1</div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-lg">Say "Hi" to start</h3>
-                  <p className="text-gray-500 mt-1">Save our number or scan the QR code to open a chat with our automated assistant.</p>
+                  <p className="text-gray-500 mt-1">Save our number or scan the QR code to open a chat with our export assistance team.</p>
                 </div>
               </div>
               
               <div className="flex gap-4">
                 <div className="w-10 h-10 rounded-full bg-green-100 text-[#128C7E] flex items-center justify-center flex-shrink-0 font-black text-lg">2</div>
                 <div>
-                  <h3 className="font-bold text-gray-900 text-lg">Send your list</h3>
-                  <p className="text-gray-500 mt-1">Type your items (e.g., "2 gallons whole milk, 1 bag basmati rice, fresh cilantro"). Or send a photo of your handwritten list!</p>
+                  <h3 className="font-bold text-gray-900 text-lg">Send your requirements</h3>
+                  <p className="text-gray-500 mt-1">Type your requirements (e.g., "50 units Mosaic Lamps, 100 pairs Premium Sneakers"). Or send your purchase order document!</p>
                 </div>
               </div>
               
@@ -48,14 +48,14 @@ export default function WhatsAppOrder() {
                 <div className="w-10 h-10 rounded-full bg-green-100 text-[#128C7E] flex items-center justify-center flex-shrink-0 font-black text-lg">3</div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-lg">Confirm & Pay</h3>
-                  <p className="text-gray-500 mt-1">We'll reply with your total and a secure payment link. Choose pickup or delivery.</p>
+                  <p className="text-gray-500 mt-1">We'll reply with a formal proforma invoice and shipping options. Finalize via secure bank transfer or payment link.</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-10 pt-8 border-t border-gray-100">
               <a 
-                href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20start%20a%20new%20grocery%20order." 
+                href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20inquire%20about%20a%20new%20export%20order." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold tracking-wide hover:bg-[#128C7E] transition-colors flex items-center justify-center gap-2 shadow-lg shadow-green-900/20"

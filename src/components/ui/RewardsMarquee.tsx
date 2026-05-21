@@ -82,7 +82,7 @@ export default function RewardsMarquee() {
             }}
             className="w-48 h-48 md:w-64 md:h-64 bg-white rounded-full flex items-center justify-center mb-8 shadow-[0_0_50px_rgba(255,255,255,0.3)] border-4 border-white/10 overflow-hidden p-8"
           >
-            <img src="/branding/logo.png" alt="Kistoper Partner Logo" className="w-full h-full object-contain" />
+            <img src="/branding/logo.webp" alt="Kistoper Partner Logo" className="w-full h-full object-contain" />
           </motion.div>
           
           <h2 className="text-4xl md:text-6xl font-display font-black text-white mb-6 tracking-tight max-w-2xl leading-[1.1]">

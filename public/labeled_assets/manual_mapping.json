@@ -1,0 +1,18 @@
+[
+  {
+    "sku": "DS_MANUAL_001",
+    "raw_image": "SHIVANSH INTERNATIONAL  Handcrafted Glass lamps-1.pdf_p0_img0.jpeg",
+    "category": "Glass Lamps",
+    "name": "Artisan Mosaic Table Lamp - Amber Glow",
+    "price": 59.99,
+    "unit": "15x15x20 cm"
+  },
+  {
+    "sku": "DS_MANUAL_002",
+    "raw_image": "SHIVANSH INTERNATIONAL  Handcrafted Glass lamps-1.pdf_p1_img0.jpeg",
+    "category": "Glass Lamps",
+    "name": "Artisan Mosaic Table Lamp - Azure Blue",
+    "price": 59.99,
+    "unit": "15x15x20 cm"
+  }
+]

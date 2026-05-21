@@ -578,6 +578,24 @@ export const MOCK_PRODUCTS: Product[] = [
     "originalPrice": 37.4875
   },
   {
+    "id": "DS_MANUAL_001",
+    "name": "Artisan Mosaic Table Lamp - Amber Glow",
+    "price": 59.99,
+    "image": "/labeled_assets/SHIVANSH INTERNATIONAL  Handcrafted Glass lamps-1.pdf_p0_img0.jpeg",
+    "category": "Glass Lamps",
+    "unit": "15x15x20 cm",
+    "inStock": true
+  },
+  {
+    "id": "DS_MANUAL_002",
+    "name": "Artisan Mosaic Table Lamp - Azure Blue",
+    "price": 59.99,
+    "image": "/labeled_assets/SHIVANSH INTERNATIONAL  Handcrafted Glass lamps-1.pdf_p1_img0.jpeg",
+    "category": "Glass Lamps",
+    "unit": "15x15x20 cm",
+    "inStock": true
+  },
+  {
     "id": "JIT03101",
     "name": "Designer Footwear - JIT03101",
     "price": 45.0,

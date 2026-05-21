@@ -15,10 +15,10 @@ export default function HowItWorks() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl font-display font-black mb-6 tracking-tight">
-              Shopping Made Simple
+              Global Export Made Simple
             </h1>
             <p className="text-brand-100 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-              Discover convenient ways to get your daily essentials. Whether you prefer automated subscriptions or a quick chat on WhatsApp, we've got you covered.
+              Discover professional ways to source premium handcrafted goods. Whether you need scheduled bulk shipments or direct export inquiries, we facilitate it all.
             </p>
           </motion.div>
         </div>
@@ -47,10 +47,10 @@ export default function HowItWorks() {
                 <CalendarSync className="w-8 h-8 text-brand-600" />
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-black text-brand-950 mb-4 tracking-tight">
-                Subscribe & Save
+                Scheduled Shipments
               </h2>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Never run out of your daily essentials like milk, bread, eggs, and fresh produce. Set up a recurring order and let us handle the rest.
+                Maintain steady inventory of premium goods like glass lamps and designer footwear. Schedule your export shipments and let us handle the global logistics.
               </p>
               
               <div className="space-y-6 mb-10">
@@ -60,7 +60,7 @@ export default function HowItWorks() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-lg">Choose Your Items</h4>
-                    <p className="text-gray-500 mt-1">Select the products you need regularly from our subscription catalog.</p>
+                    <p className="text-gray-500 mt-1">Select the products you need regularly from our wholesale catalog.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -69,7 +69,7 @@ export default function HowItWorks() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-lg">Set the Frequency</h4>
-                    <p className="text-gray-500 mt-1">Choose how often you want them delivered: weekly, bi-weekly, or monthly.</p>
+                    <p className="text-gray-500 mt-1">Choose your shipping window: monthly, quarterly, or as per production cycles.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -77,25 +77,25 @@ export default function HowItWorks() {
                     <span className="text-brand-600 font-bold text-sm">3</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">Relax & Receive</h4>
-                    <p className="text-gray-500 mt-1">We'll automatically process your order and deliver it right to your door.</p>
+                    <h4 className="font-bold text-gray-900 text-lg">Manage & Receive</h4>
+                    <p className="text-gray-500 mt-1">We'll manage production and export logistics to deliver to your nearest port or warehouse.</p>
                   </div>
                 </div>
               </div>
 
               <Link to="/shop" className="inline-flex items-center justify-center bg-brand-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-800 transition-colors w-fit shadow-lg shadow-brand-900/20">
-                Start a Subscription <ArrowRight className="ml-2 w-5 h-5" />
+                Start Bulk Order <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </div>
             
             <div className="bg-brand-50 p-8 md:p-16 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-brand-100">
-              <h3 className="text-2xl font-bold text-brand-950 mb-8">Subscription Benefits</h3>
+              <h3 className="text-2xl font-bold text-brand-950 mb-8">Wholesale Benefits</h3>
               <div className="space-y-6">
                 {[
-                  { icon: ShieldCheck, title: "5% Off Every Order", desc: "Enjoy a permanent 5% discount on all items in your active subscriptions." },
-                  { icon: Truck, title: "Free Delivery", desc: "All subscription orders over $30 automatically qualify for free delivery." },
-                  { icon: Clock, title: "Pause or Cancel Anytime", desc: "Going on vacation? Easily pause your subscription or cancel with zero fees." },
-                  { icon: CheckCircle2, title: "Priority Fulfillment", desc: "Subscription orders are prepared first to guarantee stock availability." }
+                  { icon: ShieldCheck, title: "Tiered Bulk Discounts", desc: "Enjoy progressive discounts based on order volume and shipment frequency." },
+                  { icon: Truck, title: "Logistics Support", desc: "Bulk orders qualify for end-to-end logistics and documentation support." },
+                  { icon: Clock, title: "Flexible Lead Times", desc: "Align production with your market demand with our agile manufacturing process." },
+                  { icon: CheckCircle2, title: "Priority Production", desc: "Scheduled shipments are prioritized in our production queue to guarantee availability." }
                 ].map((benefit, idx) => (
                   <div key={idx} className="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-sm border border-brand-100/50">
                     <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0">
@@ -122,13 +122,13 @@ export default function HowItWorks() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="order-2 lg:order-1 bg-[#f0fdf4] p-8 md:p-16 flex flex-col justify-center border-t lg:border-t-0 lg:border-r border-[#dcfce7]">
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">Why Order via WhatsApp?</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-8">Why Inquiry via WhatsApp?</h3>
               <div className="space-y-6">
                 {[
-                  { icon: Smartphone, title: "Familiar & Fast", desc: "No need to navigate a website. Just type what you need like you're texting a friend." },
-                  { icon: MessageCircle, title: "Real Human Support", desc: "Chat directly with our store staff to ask about fresh arrivals or specific brands." },
-                  { icon: ShoppingBag, title: "Easy Reordering", desc: "Just scroll up to your past messages and say 'Send me the same list as last week'." },
-                  { icon: CreditCard, title: "Secure Payment Links", desc: "We send a secure checkout link once your order is packed and weighed accurately." }
+                  { icon: Smartphone, title: "Familiar & Fast", desc: "No need to navigate a portal. Just type your bulk requirements like you're texting a friend." },
+                  { icon: MessageCircle, title: "Custom Quotes", desc: "Chat directly with our export managers for personalized pricing and custom designs." },
+                  { icon: ShoppingBag, title: "Production Updates", desc: "Get real-time photos and videos of your order being manufactured and packed." },
+                  { icon: CreditCard, title: "Secure Transactions", desc: "We provide formal proforma invoices and secure payment links once QC is complete." }
                 ].map((benefit, idx) => (
                   <div key={idx} className="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-sm border border-[#dcfce7]/50">
                     <div className="w-10 h-10 rounded-full bg-[#dcfce7] flex items-center justify-center flex-shrink-0">
@@ -148,10 +148,10 @@ export default function HowItWorks() {
                 <MessageCircle className="w-8 h-8 text-[#25D366]" />
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-black text-gray-900 mb-4 tracking-tight">
-                Order via WhatsApp
+                Export Inquiry via WhatsApp
               </h2>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Skip the cart and order directly through WhatsApp. Perfect for quick lists, custom requests, or when you're on the go.
+                Directly communicate for bulk quotes, custom designs, and logistics updates via WhatsApp.
               </p>
               
               <div className="space-y-6 mb-10">
@@ -160,8 +160,8 @@ export default function HowItWorks() {
                     <span className="text-[#16a34a] font-bold text-sm">1</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">Send Your List</h4>
-                    <p className="text-gray-500 mt-1">Text us your grocery list, or even send a photo of a handwritten note.</p>
+                    <h4 className="font-bold text-gray-900 text-lg">Send Your Requirements</h4>
+                    <p className="text-gray-500 mt-1">Text us your SKU requirements, or send your formal purchase order.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -169,8 +169,8 @@ export default function HowItWorks() {
                     <span className="text-[#16a34a] font-bold text-sm">2</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">We Pack & Confirm</h4>
-                    <p className="text-gray-500 mt-1">Our team picks the freshest items and confirms the final total with you.</p>
+                    <h4 className="font-bold text-gray-900 text-lg">QC & Proforma</h4>
+                    <p className="text-gray-500 mt-1">Our production team ensures quality control and provides a formal export quote.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -178,8 +178,8 @@ export default function HowItWorks() {
                     <span className="text-[#16a34a] font-bold text-sm">3</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">Pay & Receive</h4>
-                    <p className="text-gray-500 mt-1">Pay via the secure link we send, and choose delivery or curbside pickup.</p>
+                    <h4 className="font-bold text-gray-900 text-lg">Pay & Ship</h4>
+                    <p className="text-gray-500 mt-1">Complete payment via secure channels and choose your preferred shipping terms (FOB, CIF, etc.).</p>
                   </div>
                 </div>
               </div>

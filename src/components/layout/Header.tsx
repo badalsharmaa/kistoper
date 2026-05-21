@@ -159,7 +159,7 @@ export default function Header() {
               
               <Link to="/" className="block group">
                 <img 
-                  src="/branding/logo.png" 
+                  src="/branding/logo.webp" 
                   alt="Kistoper Logo" 
                   className="h-8 md:h-14 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
                 />
@@ -204,9 +204,9 @@ export default function Header() {
 
                 {/* Actions */}
                 <div className="flex items-center space-x-6 flex-shrink-0">
-                  <Link to="/quick-order" className="flex flex-col items-center text-gray-500 hover:text-brand-700 transition-colors">
+                  <Link to="/services" className="flex flex-col items-center text-gray-500 hover:text-brand-700 transition-colors">
                     <Heart className="w-5 h-5" strokeWidth={1.5} />
-                    <span className="text-[10px] font-semibold mt-1 tracking-wide">Reorder</span>
+                    <span className="text-[10px] font-semibold mt-1 tracking-wide">Services</span>
                   </Link>
                   
                   <Link to="/account" className="flex flex-col items-center text-gray-500 hover:text-brand-700 transition-colors">
@@ -255,7 +255,7 @@ export default function Header() {
                     onMouseLeave={() => setActiveMegaMenu(null)}
                   >
                     <button className="flex items-center gap-1.5 hover:text-brand-700 py-1">
-                      <Menu className="w-4 h-4" /> All Departments <ChevronDown className="w-3 h-3" />
+                      <Menu className="w-4 h-4" /> All Categories <ChevronDown className="w-3 h-3" />
                     </button>
                     
                     {/* Invisible Bridge to prevent gap closing */}
@@ -391,12 +391,12 @@ export default function Header() {
                   <li><Link to="/shop" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-gray-900 text-xl">Shop All</Link></li>
                   <li><Link to="/shop" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-accent-600 text-xl">Wholesale</Link></li>
                   <li><Link to="/services" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-gray-900 text-xl">Services</Link></li>
-                  <li><Link to="/quick-order" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-gray-900 text-xl">Quick Reorder</Link></li>
+                  <li><Link to="/quick-order" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-gray-900 text-xl">Bulk Export Order</Link></li>
                 </ul>
               </div>
               
               <div className="px-6 pt-6">
-                <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-5">Departments</h3>
+                <h3 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-5">Categories</h3>
                 <ul className="space-y-4">
                   {CATEGORIES.map(category => (
                     <li key={category}>
