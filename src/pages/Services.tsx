@@ -122,7 +122,7 @@ export default function Services() {
               <input 
                 type="text" 
                 placeholder="Search for services (e.g., Custom, IEC, ISO...)" 
-                className="w-full pl-12 pr-4 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-brand-500/30 shadow-xl text-lg"
+                className="w-full pl-12 pr-4 py-4 rounded-full bg-white text-gray-900 focus:outline-none focus:ring-4 focus:ring-brand-500/30 shadow-xl text-lg placeholder:text-gray-400"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
