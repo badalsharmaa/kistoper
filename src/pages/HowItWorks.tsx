@@ -185,7 +185,7 @@ export default function HowItWorks() {
               </div>
 
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/919058439992" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center justify-center bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#128C7E] transition-colors w-fit shadow-lg shadow-[#25D366]/20"

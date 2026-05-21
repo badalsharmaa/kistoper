@@ -55,7 +55,7 @@ export default function WhatsAppOrder() {
 
             <div className="mt-10 pt-8 border-t border-gray-100">
               <a 
-                href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20inquire%20about%20a%20new%20export%20order." 
+                href="https://wa.me/919058439992?text=Hi!%20I'd%20like%20to%20inquire%20about%20a%20new%20export%20order." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full bg-[#25D366] text-white py-4 rounded-xl font-bold tracking-wide hover:bg-[#128C7E] transition-colors flex items-center justify-center gap-2 shadow-lg shadow-green-900/20"
