@@ -3,8 +3,8 @@ import os
 import re
 
 mapping_files = [
-    "labeled_assets/Table_Lamp  SHIVANSH INTERNATIONAL.pdf_mapping.json",
-    "labeled_assets/SHOES_PIC KISTOPER  (29)[1].pdf_mapping.json"
+    "public/labeled_assets/Table_Lamp  SHIVANSH INTERNATIONAL.pdf_mapping.json",
+    "public/labeled_assets/SHOES_PIC KISTOPER  (29)[1].pdf_mapping.json"
 ]
 
 # Try to parse dimensions from Table_Lamp text
@@ -39,7 +39,14 @@ for mapping_file in mapping_files:
             unit = lamp_info.get(sku, "Piece" if category == "Glass Lamps" else "Pair")
             name = f"{'Mosaic Table Lamp' if category == 'Glass Lamps' else 'Designer Footwear'} - {sku}"
             
-            products.append({
+            # Add some discounts to populate Flash Sale
+            discount = None
+            if len(products) % 5 == 0: # Every 5th product
+                discount = "20%"
+            elif len(products) % 8 == 0:
+                discount = "15%"
+            
+            product = {
                 "id": sku,
                 "name": name,
                 "price": price,
@@ -47,7 +54,12 @@ for mapping_file in mapping_files:
                 "category": category,
                 "unit": unit,
                 "inStock": True
-            })
+            }
+            if discount:
+                product["discount"] = discount
+                product["originalPrice"] = price * 1.25 # Mock an original price
+            
+            products.append(product)
 
 products.sort(key=lambda p: p["id"])
 

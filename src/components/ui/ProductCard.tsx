@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Plus, ShoppingCart, Repeat } from 'lucide-react';
+import { Plus, ShoppingCart, Repeat, ImageOff } from 'lucide-react';
 import { Product, useCart } from '../../lib/cart-context';
 import { cn } from '../../lib/utils';
 import { motion } from 'motion/react';
@@ -13,6 +13,7 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCart();
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   const displayPrice = isSubscribed ? product.price * 0.95 : product.price;
 
@@ -32,11 +33,24 @@ export default function ProductCard({ product }: ProductCardProps) {
       
       {/* Image Container */}
       <Link to={`/product/${product.id}`} className="relative block aspect-[4/3] overflow-hidden bg-[#F8F9FA] p-6">
-        <img 
-          src={product.image} 
-          alt={product.name} 
-          className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 ease-out"
-        />
+        {imageError ? (
+          <div className="w-full h-full flex flex-col items-center justify-center text-gray-300 gap-2 border-2 border-dashed border-gray-100 rounded-xl">
+            <ImageOff className="w-12 h-12 stroke-[1.5]" />
+            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Image Not Found</span>
+          </div>
+        ) : (
+          <img 
+            src={product.image} 
+            alt={product.name} 
+            onError={() => {
+              setImageError(true);
+              if (import.meta.env.DEV) {
+                console.error(`Failed to load image for product: ${product.id} (${product.image})`);
+              }
+            }}
+            className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500 ease-out"
+          />
+        )}
         {/* Quick Add Overlay (Desktop) */}
         <div className="absolute inset-0 bg-brand-900/0 group-hover:bg-brand-900/5 transition-colors duration-300 hidden md:block" />
       </Link>

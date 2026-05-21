@@ -15,8 +15,8 @@ export default function Footer() {
         >
           <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
           <div className="relative z-10 md:w-1/2">
-            <h3 className="text-3xl md:text-4xl font-display font-black text-white mb-4">Export with Shivansh</h3>
-            <p className="text-brand-100 text-lg">Partner with us for premium handcrafted products and seamless global export services.</p>
+            <h3 className="text-3xl md:text-4xl font-display font-black text-white mb-4">Export with Kistoper</h3>
+            <p className="text-brand-100 text-lg">Partner with us for premium handcrafted products and expert services powered by Shivansh International.</p>
           </div>
           <div className="relative z-10 w-full md:w-1/2 max-w-md">
             <form className="relative flex items-center" onSubmit={(e) => e.preventDefault()}>
@@ -36,11 +36,11 @@ export default function Footer() {
             transition={{ delay: 0.1 }}
             className="lg:col-span-4"
           >
-            <div className="flex items-center mb-6 bg-white p-4 rounded-2xl inline-block w-fit shadow-lg shadow-white/5">
-              <span className="text-brand-900 font-display font-black text-xl px-2">SHIVANSH INTERNATIONAL</span>
+            <div className="flex items-center mb-6 bg-white p-2 rounded-2xl inline-block w-fit shadow-lg shadow-white/5">
+              <img src="/branding/logo.png" alt="Kistoper Logo" className="h-12 md:h-16 object-contain" />
             </div>
             <p className="text-base text-gray-400 mb-6 leading-relaxed max-w-sm">
-              Your premier global partner for handcrafted mosaic glass lamps, designer footwear, and expert import/export documentation services.
+              Your premier global partner for handcrafted mosaic glass lamps and designer footwear. Export services powered by Shivansh International.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-600 hover:text-white transition-all"><Facebook className="w-5 h-5" /></a>
@@ -115,7 +115,7 @@ export default function Footer() {
           transition={{ delay: 0.5 }}
           className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-medium"
         >
-          <p>&copy; {new Date().getFullYear()} Shivansh International. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Kistoper. All rights reserved. Services powered by Shivansh International.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

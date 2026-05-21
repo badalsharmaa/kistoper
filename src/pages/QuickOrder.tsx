@@ -54,7 +54,7 @@ export default function QuickOrder() {
                     <Package className="w-8 h-8 text-brand-400" />
                   </div>
                   <div className="flex-1 text-center sm:text-left">
-                    <h3 className="font-bold text-gray-900">Weekly Essentials Box</h3>
+                    <h3 className="font-bold text-gray-900">Export Sample Kit</h3>
                     <p className="text-sm text-gray-500 mt-1">Milk, Eggs, Bread, Bananas</p>
                     <div className="flex items-center justify-center sm:justify-start gap-2 mt-2 text-xs font-bold text-brand-600">
                       <Clock className="w-3.5 h-3.5" /> Next delivery: Tomorrow, 8am - 10am

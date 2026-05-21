@@ -80,13 +80,13 @@ export default function RewardsMarquee() {
               duration: 4, 
               ease: "easeInOut" 
             }}
-            className="w-24 h-24 md:w-32 md:h-32 bg-accent-500 rounded-full flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(249,115,22,0.4)] border-4 border-white/10"
+            className="w-48 h-48 md:w-64 md:h-64 bg-white rounded-full flex items-center justify-center mb-8 shadow-[0_0_50px_rgba(255,255,255,0.3)] border-4 border-white/10 overflow-hidden p-8"
           >
-            <Gift className="w-12 h-12 md:w-16 md:h-16 text-white" />
+            <img src="/branding/logo.png" alt="Kistoper Partner Logo" className="w-full h-full object-contain" />
           </motion.div>
           
           <h2 className="text-4xl md:text-6xl font-display font-black text-white mb-6 tracking-tight max-w-2xl leading-[1.1]">
-            Shivansh Wholesale Portal
+            Kistoper Wholesale Portal
           </h2>
           <p className="text-brand-100 text-lg md:text-xl font-medium max-w-xl mb-10 leading-relaxed">
             Partner with us for bulk orders. Unlock exclusive wholesale pricing for global exports and dedicated logistics support.

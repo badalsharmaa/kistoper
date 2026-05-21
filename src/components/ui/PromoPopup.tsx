@@ -8,7 +8,10 @@ export default function PromoPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasTriggered, setHasTriggered] = useState(false);
 
-  const saleItems = MOCK_PRODUCTS.filter(p => p.discount).slice(0, 3);
+  const saleItems = [
+    ...MOCK_PRODUCTS.filter(p => p.discount && p.category === 'Glass Lamps').slice(0, 2),
+    ...MOCK_PRODUCTS.filter(p => p.discount && p.category !== 'Glass Lamps').slice(0, 1)
+  ];
 
   useEffect(() => {
     // Show popup after 3 seconds of page load

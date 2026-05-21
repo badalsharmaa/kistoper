@@ -8,7 +8,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/AMS12701_p29_115.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "APL07101",
@@ -26,7 +28,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/APL07111_p35_139.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 56.25
   },
   {
     "id": "APL07113",
@@ -62,7 +66,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/ASH14302_p85_341.png",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "ASH14303",
@@ -107,7 +113,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/ASH14307_p90_366.png",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "ASH14308",
@@ -116,7 +124,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/ASH14308_p91_371.png",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 56.25
   },
   {
     "id": "AUH09901",
@@ -161,7 +171,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/AUH09905_p18_71.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "AUH09906",
@@ -206,7 +218,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/AUH09910_p6_23.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "AUH09911",
@@ -287,7 +301,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/BTS09202_p10_39.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 56.25
   },
   {
     "id": "BTS13204",
@@ -305,7 +321,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/BTS13205_p54_215.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "DS001",
@@ -314,7 +332,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS001_p0_107.jpeg",
     "category": "Glass Lamps",
     "unit": "12x12x13 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 37.4875
   },
   {
     "id": "DS002",
@@ -359,7 +379,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS006_p0_100.jpeg",
     "category": "Glass Lamps",
     "unit": "20x20x23 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 37.4875
   },
   {
     "id": "DS007",
@@ -395,7 +417,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS010_p1_100.jpeg",
     "category": "Glass Lamps",
     "unit": "22x22x30 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 37.4875
   },
   {
     "id": "DS011",
@@ -404,7 +428,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS011_p1_16.jpeg",
     "category": "Glass Lamps",
     "unit": "10x22x19 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 37.4875
   },
   {
     "id": "DS012",
@@ -413,7 +439,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS012_p1_20.jpeg",
     "category": "Glass Lamps",
     "unit": "13x25x24 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 37.4875
   },
   {
     "id": "DS013",
@@ -422,7 +450,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS013_p1_4.jpeg",
     "category": "Glass Lamps",
     "unit": "19x34x33 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 37.4875
   },
   {
     "id": "DS014",
@@ -494,7 +524,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS025_p2_64.jpeg",
     "category": "Glass Lamps",
     "unit": "22x22x19 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 37.4875
   },
   {
     "id": "DS026",
@@ -530,7 +562,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS029_p3_64.jpeg",
     "category": "Glass Lamps",
     "unit": "15x15x18 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 37.4875
   },
   {
     "id": "DS030",
@@ -539,7 +573,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/DS030_p3_60.jpeg",
     "category": "Glass Lamps",
     "unit": "15x15x24 cm",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 37.4875
   },
   {
     "id": "JIT03101",
@@ -548,7 +584,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/JIT03101_p23_91.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "MTR07101",
@@ -593,7 +631,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/MTR07117_p37_147.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "PUN07110",
@@ -602,7 +642,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/PUN07110_p47_187.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 56.25
   },
   {
     "id": "PUN07114",
@@ -647,7 +689,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/SUV13104_p58_231.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 56.25
   },
   {
     "id": "SUV13105",
@@ -656,7 +700,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/SUV13105_p59_235.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "SUV13106",
@@ -701,7 +747,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/SUV13110_p64_255.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "SUV13111",
@@ -719,7 +767,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/SUV13112_p66_263.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 56.25
   },
   {
     "id": "SUV13113",
@@ -746,7 +796,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/SUV13115_p70_279.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "SUV13116",
@@ -791,7 +843,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/SUV13120_p75_299.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "SUV13121",
@@ -836,7 +890,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/SUV13125_p80_319.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   },
   {
     "id": "SUV13126",
@@ -863,7 +919,9 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/SUV13128_p83_331.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "15%",
+    "originalPrice": 56.25
   },
   {
     "id": "TUB07102",
@@ -872,6 +930,8 @@ export const MOCK_PRODUCTS: Product[] = [
     "image": "/labeled_assets/TUB07102_p43_171.jpeg",
     "category": "Designer Shoes",
     "unit": "Pair",
-    "inStock": true
+    "inStock": true,
+    "discount": "20%",
+    "originalPrice": 56.25
   }
 ];

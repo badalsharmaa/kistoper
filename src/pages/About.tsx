@@ -44,9 +44,9 @@ export default function About() {
             >
               <h2 className="text-2xl md:text-3xl font-display font-black text-brand-950 mb-6">Our Legacy of Excellence</h2>
               <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
-                <p>
-                  Shivansh International stands as a beacon of quality and reliability in the global trade sector. We are deeply committed to bringing the finest handcrafted Indian products to the global market while ensuring a seamless and fully compliant export experience.
-                </p>
+                Kistoper
+                ...
+                    Kistoper stands as a beacon of quality and reliability in the global trade sector, with all services and documentation expertly managed by Shivansh International. We are deeply committed to bringing the finest handcrafted Indian products to the global market while ensuring a seamless and fully compliant export experience.
                 <div className="flex items-center gap-4 p-6 bg-brand-50 rounded-2xl border border-brand-100 mt-8">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-brand-600 shadow-sm flex-shrink-0">
                     <User className="w-8 h-8" />

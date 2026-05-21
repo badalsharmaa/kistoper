@@ -20,7 +20,7 @@ export default function Cart() {
             <ShoppingBag className="w-10 h-10 text-gray-400" />
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Your cart is empty</h2>
-          <p className="text-gray-500 mb-8 max-w-md mx-auto">Looks like you haven't added anything to your cart yet. Discover our fresh groceries and amazing deals.</p>
+          <p className="text-gray-500 mb-8 max-w-md mx-auto">Looks like you haven't added anything to your cart yet. Discover our handcrafted products and exclusive offers.</p>
           <Link to="/shop" className="inline-flex items-center justify-center bg-brand-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-800 transition-colors shadow-lg shadow-brand-900/20">
             Start Shopping
           </Link>

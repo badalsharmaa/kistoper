@@ -12,7 +12,7 @@ export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<Message[]>([
-    { id: '1', text: "Welcome to Shivansh International! 👋 I'm your export assistant. How can I help you today? I can provide info on our Handcrafted Lamps, Designer Footwear, or Export Documentation services.", sender: 'bot' }
+    { id: '1', text: "Welcome to Kistoper! 👋 I'm your export assistant. How can I help you today? I can provide info on our Handcrafted Lamps, Designer Footwear, or Export Services powered by Shivansh International.", sender: 'bot' }
   ]);
 
   const handleSend = (e: React.FormEvent) => {

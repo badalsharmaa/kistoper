@@ -8,24 +8,6 @@ import RewardsMarquee from '../components/ui/RewardsMarquee';
 import { MOCK_PRODUCTS } from '../lib/data';
 import { motion } from 'motion/react';
 import { cn } from '../lib/utils';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-
-const mapContainerStyle = {
-  width: '100%',
-  height: '100%'
-};
-
-const center = {
-  lat: 27.1767,
-  lng: 78.0081
-};
-
-const STORE_MARKERS = [
-  { name: "Agra Head Office", location: { lat: 27.1767, lng: 78.0081 } },
-  { name: "Mundra Port", location: { lat: 22.8397, lng: 69.7022 } },
-  { name: "Nhava Sheva", location: { lat: 18.9500, lng: 72.9500 } },
-  { name: "IGI Delhi", location: { lat: 28.5562, lng: 77.1000 } }
-];
 
 const CATEGORIES = [
   { name: "Glass Lamps", image: "https://images.unsplash.com/photo-1571508601936-6ca847b47ae4?auto=format&fit=crop&q=80&w=400", query: "Glass Lamps" },
@@ -41,7 +23,10 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   
   const featuredProducts = MOCK_PRODUCTS.slice(0, 5);
-  const deals = MOCK_PRODUCTS.filter(p => p.discount).slice(0, 5);
+  const deals = [
+    ...MOCK_PRODUCTS.filter(p => p.discount && p.category === 'Glass Lamps').slice(0, 3),
+    ...MOCK_PRODUCTS.filter(p => p.discount && p.category !== 'Glass Lamps').slice(0, 2)
+  ];
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -149,7 +134,7 @@ export default function Home() {
                 initial={{ scale: 1.2 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
-                src="https://images.unsplash.com/photo-1571508601936-6ca847b47ae4?auto=format&fit=crop&q=80&w=1200" 
+                src="src/assets/lampwithbg2.png" 
                 alt="Handcrafted Glass Lamps" 
                 className="w-full h-full object-cover"
               />
@@ -315,7 +300,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 h-auto md:h-[500px]">
           {/* Promo 1 - Large */}
           <Link to="/shop?category=Glass%20Lamps" className="md:col-span-8 relative rounded-[2rem] overflow-hidden group h-[400px] md:h-full">
-            <img src="https://images.unsplash.com/photo-1571508601936-6ca847b47ae4?auto=format&fit=crop&q=80&w=1200" alt="Handcrafted Lamps" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+            <img src="src/assets/lampwithbg.png" alt="Handcrafted Lamps" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-950/90 via-brand-900/40 to-transparent" />
             <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
               <span className="text-brand-300 font-bold tracking-widest text-[10px] mb-3 uppercase">Artisan Crafted</span>
@@ -328,7 +313,7 @@ export default function Home() {
           
           {/* Promo 2 - Small */}
           <Link to="/shop?category=Designer%20Shoes" className="md:col-span-4 relative rounded-[2rem] overflow-hidden group h-[300px] md:h-full">
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800" alt="Designer Footwear" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+            <img src="src/assets/shoes.png" alt="Designer Footwear" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
             <div className="absolute inset-0 bg-gradient-to-t from-accent-950/90 via-accent-900/40 to-transparent" />
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
               <span className="text-accent-300 font-bold tracking-widest text-[10px] mb-3 uppercase">Premium Quality</span>
@@ -403,34 +388,23 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Right: Google Map */}
+          {/* Right: Map Embed (Keyless) */}
           <div className="w-full lg:w-2/3 relative min-h-[400px] lg:min-h-full bg-gray-100 overflow-hidden">
-            <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY || ""}>
-              <GoogleMap
-                mapContainerStyle={mapContainerStyle}
-                center={center}
-                zoom={9}
-                options={{
-                  disableDefaultUI: false,
-                  zoomControl: true,
-                  styles: [
-                    {
-                      featureType: "poi",
-                      elementType: "labels",
-                      stylers: [{ visibility: "off" }]
-                    }
-                  ]
-                }}
-              >
-                {STORE_MARKERS.map((marker, index) => (
-                  <Marker
-                    key={index}
-                    position={marker.location}
-                    title={marker.name}
-                  />
-                ))}
-              </GoogleMap>
-            </LoadScript>
+            <iframe 
+              width="100%" 
+              height="100%" 
+              frameborder="0" 
+              scrolling="no" 
+              marginheight="0" 
+              marginwidth="0" 
+              src="https://maps.google.com/maps?q=95-Surya%20Lok%20Colony,Mau%20Road,Agra&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              className="absolute inset-0 border-0 grayscale hover:grayscale-0 transition-all duration-700"
+              title="Kistoper Head Office"
+            ></iframe>
+            <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-gray-100 shadow-xl z-10 flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></div>
+              <span className="text-[10px] font-bold text-gray-900 uppercase tracking-widest">Agra Head Office</span>
+            </div>
           </div>
         </div>
       </motion.div>
@@ -447,16 +421,21 @@ export default function Home() {
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-50 rounded-full blur-3xl -mr-20 -mt-20 transition-transform duration-700 group-hover:scale-150"></div>
             <div className="relative z-10">
-              <div className="w-16 h-16 bg-[#25D366]/10 rounded-2xl flex items-center justify-center mb-6">
-                <MessageCircle className="w-8 h-8 text-[#25D366]" />
+              <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#25D366]/20 overflow-hidden">
+                <img src="/src/assets/whatsapp-icon.svg" alt="WhatsApp" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-display font-black text-gray-900 mb-4 tracking-tight">Direct Export Inquiry</h3>
+              <h3 className="text-2xl md:text-3xl font-display font-black text-gray-900 mb-4 tracking-tight">Direct WhatsApp Inquiry</h3>
               <p className="text-gray-600 mb-8 max-w-sm leading-relaxed font-medium">
                 Connect directly with our export team via WhatsApp for real-time quotes, custom designs, and order tracking.
               </p>
-              <Link to="/contact" className="inline-flex items-center justify-center bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#128C7E] transition-colors shadow-lg shadow-[#25D366]/20">
-                Start Chat <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
+              <a 
+                href="https://wa.me/919058439992" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#128C7E] transition-colors shadow-lg shadow-[#25D366]/20"
+              >
+                Chat Now <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </div>
           </motion.div>
 

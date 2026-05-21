@@ -1,0 +1,14 @@
+TASK_CREATED
+TASK_COMPLETED
+BUG_FOUND
+REVIEW_FAILED{"event":"MANAGER_RUN","time":"Thu May 21 14:47:57 IST 2026"}
+{"event":"FRONTEND_RUN","time":"Thu May 21 14:47:58 IST 2026"}
+{"event":"BACKEND_RUN","time":"Thu May 21 14:47:58 IST 2026"}
+{"event":"QA_RUN","time":"Thu May 21 14:47:59 IST 2026"}
+{"event":"TASK_STARTED","task":"TASK-001","agent":"frontend","time":"Thu May 21 14:48:56 IST 2026"}
+{"event":"TASK_COMPLETED","task":"TASK-001","agent":"frontend","time":"Thu May 21 14:48:58 IST 2026"}
+{"event":"TASK_STARTED","task":"TASK-002","agent":"backend","time":"Thu May 21 14:48:58 IST 2026"}
+{"event":"TASK_COMPLETED","task":"TASK-002","agent":"backend","time":"Thu May 21 14:49:00 IST 2026"}
+{"event":"TASK_STARTED","task":"TASK-003","agent":"qa","time":"Thu May 21 14:49:00 IST 2026"}
+{"event":"TASK_COMPLETED","task":"TASK-003","agent":"qa","time":"Thu May 21 14:49:02 IST 2026"}
+{"event":"MANAGER_LOOP","time":"Thu May 21 14:50:09 IST 2026"}

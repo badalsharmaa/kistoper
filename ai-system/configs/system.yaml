@@ -1,0 +1,16 @@
+models:
+  primary: gemini
+
+memory:
+  type: markdown
+
+tasks:
+  queue: json
+
+logging:
+  enabled: true
+
+agents:
+  frontend: true
+  backend: true
+  qa: true

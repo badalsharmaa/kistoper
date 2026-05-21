@@ -159,9 +159,9 @@ export default function Header() {
               
               <Link to="/" className="block group">
                 <img 
-                  src="https://ik.imagekit.io/3lnhpbzc6/cash-and-carry-logo.png" 
-                  alt="Cash and Carry Logo" 
-                  className="h-16 md:h-28 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
+                  src="/branding/logo.png" 
+                  alt="Kistoper Logo" 
+                  className="h-8 md:h-14 object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
                 />
               </Link>
 
@@ -237,7 +237,7 @@ export default function Header() {
                   <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                   <input
                     type="text"
-                    placeholder="Search groceries..."
+                    placeholder="Search products..."
                     className="w-full pl-10 pr-4 py-2.5 bg-gray-50 border border-gray-200 focus:bg-white focus:border-brand-500 rounded-xl text-sm outline-none"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
@@ -267,9 +267,9 @@ export default function Header() {
                     </div>
                   </div>
                   
-                  <Link to="/deals" className="text-accent-600 hover:text-accent-700 py-1">Weekly Deals</Link>
-                  <Link to="/shop?category=Organic" className="hover:text-brand-700 py-1">Organic</Link>
-                  <Link to="/shop?category=Spices" className="hover:text-brand-700 py-1">Spices</Link>
+                  <Link to="/shop" className="text-accent-600 hover:text-accent-700 py-1">Wholesale</Link>
+                  <Link to="/shop?category=Glass%20Lamps" className="hover:text-brand-700 py-1">Lamps</Link>
+                  <Link to="/shop?category=Designer%20Shoes" className="hover:text-brand-700 py-1">Shoes</Link>
                   <Link to="/services" className="hover:text-brand-700 py-1">Services</Link>
                 </nav>
 
@@ -331,7 +331,7 @@ export default function Header() {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 group-focus-within:text-brand-600 transition-colors" />
               <input
                 type="text"
-                placeholder="Search groceries..."
+                placeholder="Search products..."
                 className="w-full pl-11 pr-4 py-2 bg-gray-100 border-transparent focus:bg-white focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 rounded-full text-sm font-medium transition-all outline-none placeholder:text-gray-400"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -389,7 +389,7 @@ export default function Header() {
                 <ul className="space-y-5">
                   <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-gray-900 text-xl">Home</Link></li>
                   <li><Link to="/shop" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-gray-900 text-xl">Shop All</Link></li>
-                  <li><Link to="/deals" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-accent-600 text-xl">Weekly Deals</Link></li>
+                  <li><Link to="/shop" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-accent-600 text-xl">Wholesale</Link></li>
                   <li><Link to="/services" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-gray-900 text-xl">Services</Link></li>
                   <li><Link to="/quick-order" onClick={() => setIsMobileMenuOpen(false)} className="block font-display font-bold text-gray-900 text-xl">Quick Reorder</Link></li>
                 </ul>

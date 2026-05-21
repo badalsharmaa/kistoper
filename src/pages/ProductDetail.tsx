@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Minus, Plus, ShoppingCart, ArrowLeft, ShieldCheck, Truck, RotateCcw } from 'lucide-react';
+import { Minus, Plus, ShoppingCart, ArrowLeft, ShieldCheck, Truck, RotateCcw, ImageOff } from 'lucide-react';
 import { MOCK_PRODUCTS } from '../lib/data';
 import { useCart } from '../lib/cart-context';
 import ProductCard from '../components/ui/ProductCard';
@@ -10,6 +10,7 @@ export default function ProductDetail() {
   const navigate = useNavigate();
   const { addItem } = useCart();
   const [quantity, setQuantity] = useState(1);
+  const [imageError, setImageError] = useState(false);
   
   const product = MOCK_PRODUCTS.find(p => p.id === id);
   
@@ -44,17 +45,30 @@ export default function ProductDetail() {
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
           {/* Product Image */}
-          <div className="bg-gray-50 p-8 md:p-12 flex items-center justify-center relative">
+          <div className="bg-gray-50 p-8 md:p-12 flex items-center justify-center relative min-h-[400px]">
             {product.discount && (
-              <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full">
+              <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full z-10">
                 {product.discount}
               </div>
             )}
-            <img 
-              src={product.image} 
-              alt={product.name} 
-              className="w-full max-w-md h-auto object-contain mix-blend-multiply"
-            />
+            {imageError ? (
+              <div className="flex flex-col items-center justify-center text-gray-300 gap-4">
+                <ImageOff className="w-24 h-24 stroke-[1]" />
+                <span className="text-sm font-bold uppercase tracking-widest text-gray-400">Image Not Found</span>
+              </div>
+            ) : (
+              <img 
+                src={product.image} 
+                alt={product.name} 
+                onError={() => {
+                  setImageError(true);
+                  if (import.meta.env.DEV) {
+                    console.error(`Failed to load image for product: ${product.id} (${product.image})`);
+                  }
+                }}
+                className="w-full max-w-md h-auto object-contain mix-blend-multiply transition-opacity duration-300"
+              />
+            )}
           </div>
           
           {/* Product Info */}
