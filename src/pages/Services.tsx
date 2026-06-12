@@ -218,7 +218,7 @@ export default function Services() {
       {/* Trust & Certification Section */}
       <section className="bg-gray-50 pb-16">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-brand-900 to-brand-950 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden shadow-xl">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-brand-900 to-brand-950 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden shadow-xl isolate transform translate-z-0">
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-800 rounded-full blur-3xl -mr-32 -mt-32 opacity-50"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-700 rounded-full blur-3xl -ml-32 -mb-32 opacity-30"></div>
             

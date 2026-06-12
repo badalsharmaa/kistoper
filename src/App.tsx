@@ -13,6 +13,8 @@ import Rewards from './pages/Rewards';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import WhatsAppOrder from './pages/WhatsAppOrder';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 export default function App() {
   return (
@@ -32,6 +34,8 @@ export default function App() {
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="whatsapp" element={<WhatsAppOrder />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="terms" element={<Terms />} />
           </Route>
         </Routes>
       </Router>

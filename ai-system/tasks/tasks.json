@@ -62,7 +62,14 @@
       "description": "Configured official email and primary/secondary phone numbers across website. Added Government IEC trust section on Services page.",
       "status": "completed",
       "priority": "medium"
+    },
+    {
+      "id": "T17",
+      "title": "Privacy, Terms & UI Fine-tuning",
+      "description": "Created Privacy Policy and Terms of Service pages. Fixed the rounded border leak on the Services trust card under WebKit/Safari.",
+      "status": "completed",
+      "priority": "medium"
     }
   ],
-  "last_updated": "2026-06-12T19:40:00Z"
+  "last_updated": "2026-06-12T19:46:00Z"
 }

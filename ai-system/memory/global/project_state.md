@@ -19,7 +19,8 @@ The platform has successfully transitioned from a grocery template to a high-end
 - **Node Environment:** Enforced Node 20+ for React 19/Vite 6 compatibility.
 - **Naming:** Reverted package name to `react-example` to match Vercel dashboard configuration.
 
-- **Contact & Trust Update:** Updated primary email to `shivanshinternationalindia@gmail.com`, and configured both primary (+91 90584 39992) and secondary (+91 70373 94791) phone numbers in the footer, contact sidebar, and chatbot fallback prompts. Added a dedicated government licensing trust card (featuring IEC NO. BHQPG5702D) on the Services page.
+- **Contact & Trust Update:** Updated primary email to `shivanshinternationalindia@gmail.com`, and configured both primary (+91 90584 39992) and secondary (+91 70373 94791) phone numbers in the footer, contact sidebar, and chatbot fallback prompts. Added a dedicated government licensing trust card (featuring IEC NO. BHQPG5702D) on the Services page. Fixed the WebKit composite border clipping issue.
+- **Privacy & Terms Pages:** Created and fully implemented `/privacy` and `/terms` pages referencing Shivansh International's corporate identity, global logistics policies, and B2B payment terms, making the site legally production-ready.
 
 ## Next Steps
 1. **Catalog Expansion:** Map remaining lamp images to SKUs using the new `manual_mapping.json` utility.
