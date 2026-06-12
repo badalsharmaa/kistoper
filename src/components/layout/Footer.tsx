@@ -96,13 +96,17 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 mr-3 text-brand-500 flex-shrink-0 mt-0.5" />
                 <span className="leading-relaxed">95- Surya Lok Colony, Mau Road, Near Shanti Hospital, Khandari, Agra (U.P.) - 282005</span>
               </li>
-              <li className="flex items-center">
-                <Phone className="w-5 h-5 mr-3 text-brand-500 flex-shrink-0" />
-                <span>Contact Sushil Kumar Gaur</span>
+              <li className="flex items-start">
+                <Phone className="w-5 h-5 mr-3 text-brand-500 flex-shrink-0 mt-1" />
+                <div className="flex flex-col gap-1">
+                  <span className="text-white font-semibold">Contact: Sushil Kumar Gaur</span>
+                  <a href="tel:+919058439992" className="hover:text-white transition-colors text-sm">+91 90584 39992 (Primary)</a>
+                  <a href="tel:+917037394791" className="hover:text-white transition-colors text-sm">+91 70373 94791 (Secondary)</a>
+                </div>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-brand-500 flex-shrink-0" />
-                <span>export@shivanshinternational.com</span>
+                <a href="mailto:shivanshinternationalindia@gmail.com" className="hover:text-white transition-colors">shivanshinternationalindia@gmail.com</a>
               </li>
             </ul>
           </motion.div>

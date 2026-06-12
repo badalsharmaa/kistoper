@@ -117,12 +117,13 @@ export default function Contact() {
               
               <div className="space-y-8 relative z-10">
                 <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0 backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0 backdrop-blur-sm mt-1">
                     <Phone className="w-6 h-6 text-brand-400" />
                   </div>
-                  <div>
-                    <p className="text-xs font-bold text-brand-300 uppercase tracking-widest mb-1">WhatsApp / Call</p>
-                    <a href="tel:+919058439992" className="text-lg font-bold hover:text-brand-400 transition-colors">+91 90584 39992</a>
+                  <div className="flex flex-col gap-1.5">
+                    <p className="text-xs font-bold text-brand-300 uppercase tracking-widest mb-0.5">WhatsApp / Call</p>
+                    <a href="tel:+919058439992" className="text-base font-bold hover:text-brand-400 transition-colors leading-none">+91 90584 39992 (Primary)</a>
+                    <a href="tel:+917037394791" className="text-base font-bold hover:text-brand-400 transition-colors leading-none">+91 70373 94791 (Secondary)</a>
                   </div>
                 </div>
 
@@ -132,7 +133,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-brand-300 uppercase tracking-widest mb-1">Email Us</p>
-                    <a href="mailto:info@shivanshinternational.com" className="text-lg font-bold hover:text-brand-400 transition-colors">info@kistoper.com</a>
+                    <a href="mailto:shivanshinternationalindia@gmail.com" className="text-base font-bold hover:text-brand-400 transition-colors break-all md:break-normal">shivanshinternationalindia@gmail.com</a>
                   </div>
                 </div>
 

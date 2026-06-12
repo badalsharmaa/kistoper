@@ -19,7 +19,9 @@ The platform has successfully transitioned from a grocery template to a high-end
 - **Node Environment:** Enforced Node 20+ for React 19/Vite 6 compatibility.
 - **Naming:** Reverted package name to `react-example` to match Vercel dashboard configuration.
 
-## Next Steps for Tomorrow
+- **Contact & Trust Update:** Updated primary email to `shivanshinternationalindia@gmail.com`, and configured both primary (+91 90584 39992) and secondary (+91 70373 94791) phone numbers in the footer, contact sidebar, and chatbot fallback prompts. Added a dedicated government licensing trust card (featuring IEC NO. BHQPG5702D) on the Services page.
+
+## Next Steps
 1. **Catalog Expansion:** Map remaining lamp images to SKUs using the new `manual_mapping.json` utility.
 2. **Email Verification:** Assist user in setting up actual EmailJS IDs (Service, Template, Public Key).
 3. **SEO Audit:** Update meta tags in `index.html` for "Kistoper" export search terms.

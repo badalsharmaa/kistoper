@@ -215,6 +215,40 @@ export default function Services() {
         )}
       </section>
 
+      {/* Trust & Certification Section */}
+      <section className="bg-gray-50 pb-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-brand-900 to-brand-950 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden shadow-xl">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-800 rounded-full blur-3xl -mr-32 -mt-32 opacity-50"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-700 rounded-full blur-3xl -ml-32 -mb-32 opacity-30"></div>
+            
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+              <div className="text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-brand-800/80 rounded-full text-brand-300 text-xs font-bold uppercase tracking-wider mb-4 border border-brand-700/50">
+                  <Shield className="w-3.5 h-3.5 text-accent-400" /> Verified Exporter
+                </div>
+                <h3 className="text-2xl md:text-3xl font-display font-black mb-3">
+                  Government Registered & Certified
+                </h3>
+                <p className="text-brand-200 text-sm md:text-base font-medium max-w-xl leading-relaxed">
+                  We are a fully licensed and compliant B2B export house. All shipments are processed in strict accordance with the Directorate General of Foreign Trade (DGFT) guidelines.
+                </p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center flex-shrink-0 w-full md:w-auto">
+                <span className="block text-xs font-bold uppercase tracking-widest text-brand-300 mb-1">Import Export Code</span>
+                <span className="block text-xl md:text-2xl font-black font-mono tracking-wider text-white select-all">
+                  IEC NO. BHQPG5702D
+                </span>
+                <span className="block text-[10px] text-brand-200 mt-2 font-bold uppercase tracking-wider">
+                  Verified by Govt. of India
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Inquiry Modal */}
       <AnimatePresence>
         {selectedService && (

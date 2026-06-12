@@ -55,7 +55,14 @@
       "description": "Implemented high-res branded favicon for browser tab visibility.",
       "status": "completed",
       "priority": "medium"
+    },
+    {
+      "id": "T16",
+      "title": "Contact & Trust Code Update",
+      "description": "Configured official email and primary/secondary phone numbers across website. Added Government IEC trust section on Services page.",
+      "status": "completed",
+      "priority": "medium"
     }
   ],
-  "last_updated": "2026-05-21T17:30:00Z"
+  "last_updated": "2026-06-12T19:40:00Z"
 }

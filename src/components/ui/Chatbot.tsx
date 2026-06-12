@@ -25,7 +25,7 @@ export default function Chatbot() {
 
     // Mock bot response using company profile info
     setTimeout(() => {
-      let response = "I'm sorry, I don't have that information. Please contact Sushil Kumar Gaur at +91 9058439992 for direct inquiries.";
+      let response = "I'm sorry, I don't have that information. Please contact Sushil Kumar Gaur at +91 9058439992 (Primary) or +91 7037394791 (Secondary) for direct inquiries.";
       
       const lowerInput = input.toLowerCase();
       if (lowerInput.includes('lamp') || lowerInput.includes('glass')) {
@@ -35,7 +35,7 @@ export default function Chatbot() {
       } else if (lowerInput.includes('service') || lowerInput.includes('clearance') || lowerInput.includes('iec')) {
         response = "We provide expert Custom Clearance, IEC/DGFT licensing, and Embassy Legalization services. Our head office is in Agra, India.";
       } else if (lowerInput.includes('contact') || lowerInput.includes('phone') || lowerInput.includes('email')) {
-        response = "You can reach us at +91 9058439992 or email shivanshinternationalagra@gmail.com. We are located at 95- Surya Lok Colony, Mau Road, Agra.";
+        response = "You can reach us at +91 9058439992 (Primary), +91 7037394791 (Secondary) or email shivanshinternationalindia@gmail.com. We are located at 95- Surya Lok Colony, Mau Road, Agra.";
       }
 
       const botMsg: Message = { 

@@ -78,7 +78,7 @@ export default function RewardsMarquee() {
             transition={{ 
               repeat: Infinity, 
               duration: 4, 
-              ease: "easeInOut" 
+              ease: "easeInOut"  
             }}
             className="w-48 h-48 md:w-64 md:h-64 bg-white rounded-full flex items-center justify-center mb-8 shadow-[0_0_50px_rgba(255,255,255,0.3)] border-4 border-white/10 overflow-hidden p-8"
           >
